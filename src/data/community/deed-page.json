@@ -1,0 +1,81 @@
+{
+  "slug": "deed-page",
+  "name": "deed.page",
+  "kind": "plugin",
+  "categories": [
+    "integration",
+    "workflow"
+  ],
+  "summary": "Publishes a file or folder to a permanent public deed.page URL in one call, with no account, API key, email code or claim link.",
+  "description": [
+    "The repository is a plugin that bundles the deed.page agent skill with the hosted deed.page MCP server. The skill is one file, skills/deed-page/SKILL.md, and does the publish with one curl request. The MCP server runs at https://deed.page/mcp over Streamable HTTP.",
+    "Ask the agent to publish a folder to deed.page or to host a report and give you a link. It calls publish_site with the files and answers with the live URL; to change the site later it calls update_site with the same slug and token. The first publish returns an owner token once, and that token is the key to update or delete the sites it owns.",
+    "Free plan: 25 sites, 25 MB per site, 60 publishes per hour. Free sites are public, so do not publish secrets. Static files only. It is a community project, not made or endorsed by Anthropic."
+  ],
+  "publisher": {
+    "name": "Avatar 8 LLC",
+    "url": "https://github.com/f-o-x11",
+    "kind": "community"
+  },
+  "repositoryUrl": "https://github.com/f-o-x11/deed-page-skill",
+  "license": "MIT",
+  "availability": "installable",
+  "installCommands": [
+    "/plugin marketplace add f-o-x11/deed-page-skill",
+    "/plugin install deed-page@deed-page"
+  ],
+  "notice": "Sites published on the free plan are public. The plugin installs from its own repository's marketplace, not from Anthropic's.",
+  "details": [
+    {
+      "label": "Version",
+      "value": "1.3.0",
+      "isCommand": false
+    },
+    {
+      "label": "Plugin id",
+      "value": "deed-page",
+      "isCommand": false
+    },
+    {
+      "label": "MCP server",
+      "value": "https://deed.page/mcp (Streamable HTTP, 24 tools)",
+      "isCommand": false
+    },
+    {
+      "label": "Download the source",
+      "value": "git clone https://github.com/f-o-x11/deed-page-skill",
+      "isCommand": true
+    }
+  ],
+  "guide": [],
+  "hooks": [],
+  "tags": [
+    "hosting",
+    "static-site",
+    "publish",
+    "deploy",
+    "skills",
+    "remote-mcp"
+  ],
+  "links": [
+    {
+      "label": "README",
+      "url": "https://github.com/f-o-x11/deed-page-skill/blob/main/README.md"
+    },
+    {
+      "label": "SKILL.md",
+      "url": "https://github.com/f-o-x11/deed-page-skill/blob/main/skills/deed-page/SKILL.md"
+    },
+    {
+      "label": "LICENSE",
+      "url": "https://github.com/f-o-x11/deed-page-skill/blob/main/LICENSE"
+    }
+  ],
+  "stars": null,
+  "isFeatured": false,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-10-25",
+    "sourceUrl": "https://github.com/f-o-x11/deed-page-skill"
+  }
+}
